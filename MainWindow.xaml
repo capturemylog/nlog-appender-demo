@@ -1,0 +1,15 @@
+﻿<Window x:Class="CaptureMyLog.NLog.FunctionalTests.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Functional Test for CaptureMyLogTarget" Height="302" Width="402" WindowStartupLocation="CenterScreen">
+    <Grid SnapsToDevicePixels="True" ShowGridLines="False">
+        <Label Content="Custom message" Margin="12,10,0,0" Name="labeCustomMessage" FlowDirection="RightToLeft" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Width="95" />
+        <TextBox Height="23" Margin="113,12,12,0" Name="textBoxCustomMessage" VerticalAlignment="Top" AcceptsTab="False" IsReadOnly="False" />
+        <Button Content="Generate an SqlException" Height="23" Margin="113,89,12,0" Name="buttonUnauthorizedAccessException" VerticalAlignment="Top" HorizontalAlignment="Stretch" Click="buttonGenerateSqlException_Click" />
+        <Button Content="Generate an UnauthorizedAccessException" Height="23" Margin="113,118,12,0" Name="buttonGenerateUnauthorizedAccessException" VerticalAlignment="Top" Click="buttonGenerateUnauthorizedAccessException_Click" />
+        <Button Content="Generate a NullReferenceException" Height="23" Margin="113,147,12,0" Name="buttonGenerateNullReferenceException" VerticalAlignment="Top" Click="buttonGenerateNullReferenceException_Click" />
+        <Button Content="Log smth. on DEBUG Level" Margin="113,0,12,12" Name="buttonLogOnDebugLevel" Click="buttonLogOnDebugLevel_Click" Height="23" VerticalAlignment="Bottom" />
+        <Button Content="Log smth. on WARN Level" Height="23" Margin="113,0,12,41" Name="buttonLogOnInfoLevel" VerticalAlignment="Bottom" Click="buttonLogOnInfoLevel_Click" />
+        <Button Content="Log smth. on INFO level" Height="23" HorizontalAlignment="Stretch" Margin="113,41,12,0" Name="buttonLogInfo" VerticalAlignment="Top" Click="buttonLogInfo_Click" />
+    </Grid>
+</Window>
